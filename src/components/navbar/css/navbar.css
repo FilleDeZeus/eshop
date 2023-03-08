@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    padding: 0 50px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .site {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .menu a:hover {
+    color: #454546;
+  }
+  
+  #log {
+    position: relative;
+  }
+  
+  .fa-basket-shopping {
+    font-size: 3rem;
+    cursor: pointer;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .achat{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  }
+  
+  #panier {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: #333 1px solid;
+    border-radius: 10%;
+    /* box-shadow: 0 5px 40px rgba(201, 51, 51, 0.1); */
+    display: none;
+    padding: 20%;
+    z-index: 1;
+  }
+  
+  #log:hover #panier {
+    display: block;
+  }
+#panier .produits{
+  display: flex;
+  justify-content: center;
+}
+  
+  #panier .produit-info {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* margin-bottom: 10px; */
+    border-bottom: 1px solid #ccc;
+    /* padding-bottom: 10px; */
+  }
+  #panier img {
+    height: 50px;
+    width: 50px;
+    /* object-fit: cover; */
+    /* margin-right: -20px !important; */
+  }
+  
+  #panier .nom {
+    font-weight: bold;
+    font-size: 1rem;
+    /* margin-right: 20px; */
+  }
+  
+  #panier .quantite {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+  }

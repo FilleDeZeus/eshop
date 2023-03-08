@@ -1,0 +1,45 @@
+{
+    "boissons": [  
+    {    
+        "id": 1,    
+        "nom": "Coca",    
+        "unite": 5,    
+        "prix": 2,    
+        "image": "https://stickeramoi.com/15655-large_default/sticker-boisson-canette-coca-cola.jpg"  },  
+    {    
+        "id": 2,    
+        "nom": "Oasis",   
+        "unite": 5,    
+        "prix": 2,    
+        "image": "https://stickeramoi.com/15659-large_default/sticker-boisson-canette-oasis.jpg"  
+    },  
+    {    
+        "id": 3,    
+        "nom": "Sprite",    
+        "unite": 5,    
+        "prix": 2,    
+        "image": "https://stickeramoi.com/15660-thickbox_default/sticker-boisson-canette-sprite.jpg"  
+    },
+    {    
+        "id": 4,    
+        "nom": "7UP",    
+        "unite": 5,    
+        "prix": 2,    
+        "image": "https://stickeramoi.com/15658-large_default/sticker-boisson-canette-seven-up.jpg"  
+    },
+    {    
+        "id": 5,    
+        "nom": "Schweppes",    
+        "unite": 5,    
+        "prix": 2,    
+        "image": "https://stickeramoi.com/15657-large_default/sticker-boisson-canette-schweppes.jpg"
+    },
+    {    
+        "id": 6,    
+        "nom": "Pepsi",    
+        "unite": 5,    
+        "prix": 2,    
+        "image": "https://stickeramoi.com/15661-large_default/sticker-boisson-canette-pepsi.jpg"
+}
+
+]}
