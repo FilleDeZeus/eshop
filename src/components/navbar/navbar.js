@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Panier } from '../panier/panier.js'
 import './css/navbar.css'
 
-export const Nav = (props) => {
+export const Navbar = (props) => {
     return (
 
         <div className='navbar'>

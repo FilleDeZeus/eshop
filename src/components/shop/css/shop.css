@@ -1,59 +1,96 @@
 .shop {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  
-  .card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-gap: 20px;
-  }
-  
-  .produit {
-    display: flex;
-    flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop .card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-top: 30px;
+
+}
+
+.shop .produit {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+}
+.shop .produit:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+.shop .produit .img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.shop .produit h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shop .produit p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.shop .produit .stock {
+  color: #ff5a5f;
+  font-weight: bold;
+  margin-top: auto;
+  font-size: 20px;
+}
+
+.shop .produit .dernier {
+  margin-bottom: 0;
+}
+
+.shop .produit .co {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.shop .produit .co:hover {
+  background-color: #ff3b3f;
+}
+
+.shop .produit .disabled {
   background-color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .co {
-    background-color: #5cb85c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  } 
-  
-  .co:hover {
-    background-color: #4cae4c;
-  }
-  
-  .text {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-.description{
-  width: 100%;
-}
-.produit.stock-empty {
-  background-color: #ffcccc; /* Couleur de fond lorsque le stock est épuisé */
+  color: #666;
 }
 
-.produit.last {
-  background-color: yellow; /* Couleur de fond lorsque le stock est épuisé */
+.shop .produit.rupture {
+  opacity: 0.6;
 }
+
+.shop button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.shop button:hover {
+  background-color: #555;
+}
+
