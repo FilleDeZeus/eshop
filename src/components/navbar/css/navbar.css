@@ -53,6 +53,7 @@
     border-radius: 10%;
     padding: 10px;
     z-index: 1;
+    display: none;
   }
   #panier h2{
     font-size: 1rem;
