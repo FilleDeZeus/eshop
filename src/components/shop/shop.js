@@ -47,7 +47,7 @@ export const Shop = (props) => {
       nouveauPanier.push({ ...produitAAjouter, unite: 1 });
     }
 
-    const updatedProduit = props.produit.map((p) => {
+    const nouveauProduit = props.produit.map((p) => {
       if (p.id === id) {
         return { ...p, unite: p.unite - 1 };
       }
@@ -55,7 +55,7 @@ export const Shop = (props) => {
     });
 
     props.setPanier(nouveauPanier);
-    props.setProduit(updatedProduit);
+    props.setProduit(nouveauProduit);
     props.setArgent(props.argent - produitAAjouter.prix);
     props.setUnite(props.unite + 1);
   };
